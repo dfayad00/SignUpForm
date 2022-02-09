@@ -29,7 +29,7 @@ class FormActivity : AppCompatActivity() {
                 passwordField.text.toString() != confirmField.text.toString() ->
                     confirmField.error = "Error: Passwords do not match"
                 else ->
-                    Toast.makeText(this, "Welcome to SignUpForm", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Welcome to SignUpForm, ${nameField.text}", Toast.LENGTH_LONG).show()
             }
         }
     }
